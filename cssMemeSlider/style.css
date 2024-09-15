@@ -7,14 +7,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #25282A;
+  font-size: 16px;
 }
 
 .slider {
   position: relative;
   width: 100%;
-  max-width: 720px;
+  max-width: 45em;
   margin: auto;
-  padding: 13px 30px;
+  padding: 0.8125em 0.675em;
 }
 
 .slide {
@@ -26,17 +27,17 @@ body {
 }
 
 .slide img {
-  border-radius: 10px;
+  border-radius: 0.375em;
   width: 100%;
   height: auto;
 }
 
 .slide span {
   position: absolute;
-  bottom: -38px;
+  bottom: -2.675em;
   left: 0;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 input[type="radio"] {
@@ -46,18 +47,18 @@ input[type="radio"] {
 .navigation {
   display: flex;
   justify-content: flex-end;
-  padding-top: 15px;
+  padding-top: 0.9375em;
 }
 
 .navigation label {
-  padding: 8px 4px;
+  padding: 0.5em 0.25em;
   cursor: pointer;
 }
 
 .navigation label span {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   border: 1px solid #75ABFA;
   background-color: #75ABFA;
@@ -102,11 +103,11 @@ input[type="radio"] {
 @media (max-width: 768px) {
   .navigation {
     justify-content: center;
-    padding-top: 5px;
+    padding-top: 0.3125em;
   }
 
   .slide span {
-    bottom: -54px;
-    left: 8px;
+    bottom: -3.375em;
+    left: 0.5em;
   }
 }
