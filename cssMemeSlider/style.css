@@ -11,7 +11,6 @@ body {
 }
 
 .slider {
-  position: relative;
   width: 100%;
   max-width: 45em;
   margin: auto;
@@ -19,11 +18,10 @@ body {
 }
 
 .slide {
-  position: relative;
   opacity: 0;
   visibility: hidden;
   height: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .slide img {
@@ -33,11 +31,10 @@ body {
 }
 
 .slide span {
-  position: absolute;
-  bottom: -2.675em;
-  left: 0;
+  display: block;
   color: #ffffff;
   font-size: 0.875em;
+  padding-top: 1.575em;
 }
 
 input[type="radio"] {
@@ -47,7 +44,7 @@ input[type="radio"] {
 .navigation {
   display: flex;
   justify-content: flex-end;
-  padding-top: 0.9375em;
+  margin-top: -1.4em;
 }
 
 .navigation label {
@@ -60,7 +57,7 @@ input[type="radio"] {
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  border: 1px solid #75ABFA;
+  border: 0.0625em solid #75ABFA;
   background-color: #75ABFA;
   transition: all 0.3s ease-in-out;
 }
@@ -101,13 +98,18 @@ input[type="radio"] {
 }
 
 @media (max-width: 768px) {
+  .slider {
+    padding: 0.8125em 2.075em;
+}
+
   .navigation {
     justify-content: center;
-    padding-top: 0.3125em;
+    margin-top: -3.12em;
+    margin-left: 0.4em;
   }
 
   .slide span {
-    bottom: -3.375em;
-    left: 0.5em;
+    padding-top: 2.975em;
+    padding-left: 0.4em;
   }
 }
